@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+# Travel Buddy - AI Travel Recommendation Chatbot
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React-based chatbot that uses Google's Gemini API to provide personalized travel recommendations.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Modern, responsive UI with Tailwind CSS
+- Real-time chat interface with user/bot avatars
+- Loading indicators while waiting for responses
+- Message formatting with basic Markdown support
+- Context-aware responses using chat history
+- Component-based architecture for easy maintenance
 
-### `npm start`
+## Project Structure
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```
+travel-buddy-react/
+├── public/               # Static files
+├── src/                  # Source code
+│   ├── components/       # React components
+│   ├── services/         # API services
+│   ├── utils/            # Utility functions
+│   ├── hooks/            # Custom React hooks
+│   ├── context/          # React context
+│   ├── App.jsx           # Main app component
+│   └── index.jsx         # Entry point
+├── .env                  # Environment variables
+└── package.json          # Dependencies and scripts
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+1. Clone the repository
+2. Install dependencies
+   ```
+   npm install
+   ```
+3. Create a `.env` file in the root directory and add your Gemini API key:
+   ```
+   REACT_APP_GEMINI_API_KEY=your_gemini_api_key
+   REACT_APP_GEMINI_API_URL=https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent
+   ```
+4. Start the development server
+   ```
+   npm start
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## How to Use
 
-### `npm run build`
+Simply type your travel preferences in the chat input and ask for recommendations. The chatbot will analyze your preferences and suggest suitable destinations based on:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Climate preferences
+- Activities you enjoy
+- Budget constraints
+- Travel duration and season
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Customization
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+You can easily customize the chatbot by:
 
-### `npm run eject`
+- Modifying the UI components in the `components` folder
+- Adjusting the Tailwind theme in `tailwind.config.js`
+- Changing the API parameters in `geminiService.js`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Technologies Used
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- React
+- Tailwind CSS
+- Heroicons
+- Google Gemini API
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## License
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+MIT
