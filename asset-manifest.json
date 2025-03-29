@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/travel-buddy/static/css/main.45be1489.css",
+    "main.js": "/travel-buddy/static/js/main.381a2dd3.js",
+    "index.html": "/travel-buddy/index.html",
+    "main.45be1489.css.map": "/travel-buddy/static/css/main.45be1489.css.map",
+    "main.381a2dd3.js.map": "/travel-buddy/static/js/main.381a2dd3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.45be1489.css",
+    "static/js/main.381a2dd3.js"
+  ]
+}
