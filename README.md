@@ -37,8 +37,7 @@ travel-buddy-react/
    ```
 3. Create a `.env` file in the root directory and add your Gemini API key:
    ```
-   REACT_APP_GEMINI_API_KEY=your_gemini_api_key
-   REACT_APP_GEMINI_API_URL=https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent
+   GEMINI_API_KEY=your-gemini-api-key
    ```
 4. Start the development server
    ```
